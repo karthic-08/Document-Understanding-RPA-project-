@@ -1,0 +1,203 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="893.3333333333334,1474.6666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisascb="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentTypeB44D5567Edbf4595A5C3De8743338985.Bundle;assembly=CustomGptDocumentTyp.LdPhA4hTlfP1dsV2U6nttX1" xmlns:uisascb1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentTypeC03596777E354A49800C4Ae5714Fa796.Bundle;assembly=CustomGptDocumentTyp.d0EAwxC8pH1mVPtg36CPPF2" xmlns:uisascb2="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType4Aa2A43E01554921A549D51C25B8D3D2.Bundle;assembly=CustomGptDocumentTyp.xna1T6hqqJ1uZOck2ySwM71" xmlns:uisascb3="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType15F5Ad5A774A4D9EBcd0C307F428Ac92.Bundle;assembly=CustomGptDocumentTyp.CgV3u1hMw4E1JF2Iy3d5B4J1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Classification</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.DocumentUnderstanding.ML.Activities</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType08Ac7A481Bf946CaBc0238F3E32B8948.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType7B6E3Ad8759444269E63Af262D891De6.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentTypeC22B32713D144D64A163211B5853B7B6.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType318Fe2Ce366F4F12A9B4390E53Dd0D89.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType2Ebe00632E604B6090F135B80F3A60E8.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentTypeB44D5567Edbf4595A5C3De8743338985.Bundle</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentTypeF93B29E949F545248E9885B14Abab611.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentTypeC03596777E354A49800C4Ae5714Fa796.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType4Aa2A43E01554921A549D51C25B8D3D2.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType15F5Ad5A774A4D9EBcd0C307F428Ac92.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.WxSFv1w2iuJ1rgBw534hp0U</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.5ylWs2NzAqD1AS7VZ4b9224</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.NQmPB1BaheO1WYSTy1zzDyf1</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.nDuo9gDNrC1LppMa2xYbl4</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.y7Yvb19DdCD1gborR21y0Jk2</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.LdPhA4hTlfP1dsV2U6nttX1</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.VgPY43YIGlB1br6FYIIzlk1</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.d0EAwxC8pH1mVPtg36CPPF2</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.xna1T6hqqJ1uZOck2ySwM71</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.CgV3u1hMw4E1JF2Iy3d5B4J1</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="563.3333333333334,4431.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="question" />
+      <Variable x:TypeArguments="uisad1:DocumentData" Name="pdffile" />
+      <Variable x:TypeArguments="uisad:IDocumentData(uisascb:CustomGptDocumentTypeB44D5567Edbf4595A5C3De8743338985)" Name="extracteddata" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="501.3333333333333,86" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;choose a Question &quot;+vbCrLf+&quot; 1)what is name of company&quot;+vbCrLf+&quot; 2) what is the date the document is effective from &quot;+vbCrLf+&quot; 3) what is the salary of executive&quot;+vbCrLf+&quot; 4) what is executive car allowance&quot;]" />
+    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="501.3333333333333,243.33333333333334" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:Int32">[question]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="501.3333333333333,3911.3333333333335" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+      <ui:IfElseIf.ConditionBlocks>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+          <ui:IfElseIfBlock BlockType="If" Condition="[question=1]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,831.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <p:ClassifyDocument ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApiKey="ysxfy5r0i8GNPZyo7CerTuNRmMbOSC8lMgVeqSOMS9yE+1pKrg+DjEgfezPld8dBjew94KKaI4/m0ED23hMHVA==" ClassificationResults="[pdffile]" ClassifierId="Predefined" DisplayName="Classify Document" Endpoint="https://du.uipath.com:443/classify/MLclassification" FileInput="[LocalResource.FromPath(&quot;EMPLOYMENT AGREEMENT.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="388,317.3333333333333" sap2010:WorkflowViewState.IdRef="ClassifyDocument_2" MinimumConfidence="50" ProjectId="00000000-0000-0000-0000-000000000000" />
+                <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisascb:CustomGptDocumentTypeB44D5567Edbf4595A5C3De8743338985" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" DisplayName="Extract Document Data" DocType="Generative" ExtractionResults="[extracteddata]" FileInput="[pdffile]" sap:VirtualizedContainerService.HintSize="388,247.33333333333334" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_1" ProjectId="00000000-0000-0000-0000-000000000000" Prompt="{}{&quot;name&quot;:&quot;what is the name of the company&quot;}" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,76" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[extracteddata]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[question=2]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,831.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="uisad:IDocumentData(uisascb1:CustomGptDocumentTypeC03596777E354A49800C4Ae5714Fa796)" Name="data" />
+                  <Variable x:TypeArguments="uisad1:DocumentData" Name="pdffile1" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <p:ClassifyDocument ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApiKey="ysxfy5r0i8GNPZyo7CerTuNRmMbOSC8lMgVeqSOMS9yE+1pKrg+DjEgfezPld8dBjew94KKaI4/m0ED23hMHVA==" ClassificationResults="[pdffile1]" ClassifierId="Predefined" DisplayName="Classify Document" Endpoint="https://du.uipath.com:443/classify/MLclassification" FileInput="[LocalResource.FromPath(&quot;EMPLOYMENT AGREEMENT.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="388,317.3333333333333" sap2010:WorkflowViewState.IdRef="ClassifyDocument_3" MinimumConfidence="50" ProjectId="00000000-0000-0000-0000-000000000000" />
+                <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisascb1:CustomGptDocumentTypeC03596777E354A49800C4Ae5714Fa796" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" DisplayName="Extract Document Data" DocType="Generative" ExtractionResults="[data]" FileInput="[pdffile1]" sap:VirtualizedContainerService.HintSize="388,247.33333333333334" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_2" ProjectId="00000000-0000-0000-0000-000000000000" Prompt="{}{&quot;date&quot;:&quot;what is the date of effectiveness&quot;}" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,76" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[data]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[question=3]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,831.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="uisad1:DocumentData" Name="pdffile2" />
+                  <Variable x:TypeArguments="uisad:IDocumentData(uisascb2:CustomGptDocumentType4Aa2A43E01554921A549D51C25B8D3D2)" Name="data2" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <p:ClassifyDocument PersistenceId="{x:Null}" ApiKey="ysxfy5r0i8GNPZyo7CerTuNRmMbOSC8lMgVeqSOMS9yE+1pKrg+DjEgfezPld8dBjew94KKaI4/m0ED23hMHVA==" ClassificationResults="[pdffile2]" ClassifierId="Predefined" ClassifierResult="{x:Null}" DisplayName="Classify Document" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" Endpoint="https://du.uipath.com:443/classify/MLclassification" FileInput="[LocalResource.FromPath(&quot;EMPLOYMENT AGREEMENT.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="388,317.3333333333333" sap2010:WorkflowViewState.IdRef="ClassifyDocument_4" MinimumConfidence="50" PredictionId="{x:Null}" ProjectId="00000000-0000-0000-0000-000000000000" Prompt="{x:Null}" />
+                <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisascb2:CustomGptDocumentType4Aa2A43E01554921A549D51C25B8D3D2" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" DisplayName="Extract Document Data" DocType="Generative" ExtractionResults="[data2]" FileInput="[pdffile2]" sap:VirtualizedContainerService.HintSize="388,247.33333333333334" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_3" ProjectId="00000000-0000-0000-0000-000000000000" Prompt="{}{&quot;salary&quot;:&quot;what is salry of employee&quot;}" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,76" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[data2]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[question=4]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,831.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="uisad1:DocumentData" Name="pdffile4" />
+                  <Variable x:TypeArguments="uisad:IDocumentData(uisascb3:CustomGptDocumentType15F5Ad5A774A4D9EBcd0C307F428Ac92)" Name="data4" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <p:ClassifyDocument ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApiKey="ysxfy5r0i8GNPZyo7CerTuNRmMbOSC8lMgVeqSOMS9yE+1pKrg+DjEgfezPld8dBjew94KKaI4/m0ED23hMHVA==" ClassificationResults="[pdffile4]" ClassifierId="Predefined" DisplayName="Classify Document" Endpoint="https://du.uipath.com:443/classify/MLclassification" FileInput="[LocalResource.FromPath(&quot;EMPLOYMENT AGREEMENT.pdf&quot;)]" sap:VirtualizedContainerService.HintSize="388,317.3333333333333" sap2010:WorkflowViewState.IdRef="ClassifyDocument_5" MinimumConfidence="50" ProjectId="00000000-0000-0000-0000-000000000000" />
+                <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisascb3:CustomGptDocumentType15F5Ad5A774A4D9EBcd0C307F428Ac92" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" DisplayName="Extract Document Data" DocType="Generative" ExtractionResults="[data4]" FileInput="[pdffile4]" sap:VirtualizedContainerService.HintSize="388,247.33333333333334" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_4" ProjectId="00000000-0000-0000-0000-000000000000" Prompt="{}{&quot;allowance&quot;:&quot;what is the executive car allowance&quot;}" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,76" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[data4]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+        </sc:BindingList>
+      </ui:IfElseIf.ConditionBlocks>
+    </ui:IfElseIf>
+  </Sequence>
+</Activity>
